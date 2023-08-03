@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+  </head>
+  <body>
+    <div class="content" id="content">
+      <div class="edit-modal-container" id="edit-modal-container">
+        <div class="edit-modal">
+          <h1>Edit Note</h1>
+          <input type="text" id="editTitleInput" placeholder="New Title" />
+          <input
+            type="text"
+            id="editDescriptionInput"
+            placeholder="New Description"
+          />
+          <button id="edit-submit" note-id="null">Save</button>
+          <button id="edit-cancel">Cancel</button>
+        </div>
+      </div>
+      <div class="create-note-form" id="create-note-form">
+        <input
+          class="form-input"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="username"
+        />
+        <input
+          class="form-input"
+          type="text"
+          name="title"
+          id="title"
+          placeholder="title"
+        />
+        <input
+          class="form-input"
+          type="text"
+          name="description"
+          id="description"
+          placeholder="description"
+        />
+        <button id="createNote">Create</button>
+      </div>
+      <div id="notes">
+        <h1>Nothing here!</h1>
+      </div>
+    </div>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
